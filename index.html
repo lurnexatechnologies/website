@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lurnexa Technologies | Premium AI & Innovation</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="icon" href="favicon.png" type="image/png">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Services -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+</head>
+<body class="bg-dark text-light">
+
+    <!-- Ambient Background Blobs -->
+    <div class="ambient-blob blob-1"></div>
+    <div class="ambient-blob blob-2"></div>
+    <div class="ambient-blob blob-3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-nav" id="navbar">
+        <div class="container nav-container">
+            <div class="logo cursor-pointer" id="homeLogo">
+                <img src="logo.png" alt="Lurnexa Logo" class="logo-image">
+                <div class="logo-text">Lurnexa<span class="text-gradient">Tech</span></div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="mobile-toggle" id="mobileToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link active" data-page="home">Home</a>
+                <a class="nav-link" data-page="solutions">Solutions</a>
+                <a class="nav-link" data-page="research">Research</a>
+                <a class="nav-link" data-page="careers">Careers</a>
+                <a class="nav-link" data-page="insights">Insights</a>
+                <button class="btn-primary glow-effect ml-4 md-mt-4" id="connectBtn">
+                    <i class="fas fa-rocket mr-2"></i> Connect
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Pages Wrapper -->
+    <main class="main-wrapper">
+        
+        <!-- =================== HOME PAGE =================== -->
+        <div id="home" class="page active-page">
+            
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <!-- Video Background -->
+                <div class="video-background-container">
+                    <video class="slide-video active-video bg-video" autoplay muted loop playsinline>
+                        <source src="ai1.mp4" type="video/mp4">
+                    </video>
+                    <video class="slide-video bg-video" autoplay muted loop playsinline>
+                        <source src="ai2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="container relative z-10 hero-content-wrapper">
+                    <div class="hero-grid">
+                        <div class="hero-text">
+                            <!-- Slides -->
+                            <div class="slide-content active-slide">
+                                <div class="glass-badge mb-4"><i class="fas fa-bolt text-primary mr-2"></i> AI & Analytics Startup</div>
+                                <h1 class="display-1">We're a tiny team building <br><span class="text-gradient">big AI dreams</span></h1>
+                                <p class="hero-subtitle">Lurnexa Technologies combines cutting-edge artificial intelligence with lean startup methodology to deliver solutions that actually work — minus the enterprise bloat.</p>
+                            </div>
+                            <div class="slide-content">
+                                <div class="glass-badge mb-4"><i class="fas fa-brain text-secondary mr-2"></i> Intelligent Engineering</div>
+                                <h1 class="display-1">From Ideas to <br><span class="text-gradient-alt">Intelligent Systems</span></h1>
+                                <p class="hero-subtitle">Lurnexa Technologies designs and builds AI solutions that learn, adapt, and deliver real-world impact—helping businesses move faster and work smarter.</p>
+                            </div>
+                            
+                            <!-- Actions -->
+                            <div class="hero-actions mt-8">
+                                <button class="btn-primary btn-large glow-effect" onclick="document.getElementById('connectBtn').click()">
+                                    Let's Talk <i class="fas fa-arrow-right ml-2"></i>
+                                </button>
+                                <button class="btn-outline btn-large" onclick="document.querySelector('[data-page=\'solutions\']').click()">
+                                    Explore Work
+                                </button>
+                            </div>
+                            
+                            <!-- Slide Dots -->
+                            <div class="slide-dots mt-8">
+                                <span class="dot active-dot" data-index="0"></span>
+                                <span class="dot" data-index="1"></span>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Grid -->
+            <section class="section container">
+                <div class="section-heading text-center" data-aos="fade-up">
+                    <h2 class="display-2">Core <span class="text-gradient">Capabilities</span></h2>
+                    <p class="text-muted mt-4 max-w-2xl mx-auto">Transforming complex challenges into elegant, scalable solutions across the entire technology stack.</p>
+                </div>
+                
+                <div class="grid grid-3 gap-8 mt-12">
+                    <div class="glass-card hover-lift p-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon-large text-gradient"><i class="fas fa-microchip"></i></div>
+                        <h3 class="card-title">AI & Machine Learning</h3>
+                        <p class="text-muted mb-6">Custom models, NLP, computer vision, and predictive analytics that learn straight from your data.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle text-primary"></i> Custom LLM fine-tuning</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Computer vision systems</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Real-time predictions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card hover-lift highlight-card p-10" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-glow"></div>
+                        <div class="card-icon-large text-gradient-alt"><i class="fas fa-chart-pie"></i></div>
+                        <h3 class="card-title">Data Analytics</h3>
+                        <p class="text-muted mb-6">Turn raw data into actionable insights with interactive, responsive dashboards.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle text-secondary"></i> Real-time dashboards</li>
+                            <li><i class="fas fa-check-circle text-secondary"></i> Predictive analytics</li>
+                            <li><i class="fas fa-check-circle text-secondary"></i> Data engineering pipelines</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="glass-card hover-lift p-10" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon-large text-gradient"><i class="fas fa-cubes"></i></div>
+                        <h3 class="card-title">Smart Software</h3>
+                        <p class="text-muted mb-6">Cloud-native applications, microservices, and robust APIs built for immense scale.</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check-circle text-primary"></i> Full-stack development</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> Cloud architecture</li>
+                            <li><i class="fas fa-check-circle text-primary"></i> API integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Work -->
+            <section class="section container">
+                <div class="flex-between items-end mb-12" data-aos="fade-up">
+                    <div class="section-heading mb-0 text-left">
+                        <h2 class="display-2">Featured <span class="text-gradient">Projects</span></h2>
+                        <p class="text-muted mt-2">A glimpse into our recent successful deployments.</p>
+                    </div>
+                    <button class="btn-outline hidden-mobile">View All Projects</button>
+                </div>
+                
+                <div class="grid grid-3 gap-8">
+                    <div class="portfolio-card glass-card p-0 overflow-hidden group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="img-wrapper">
+                            <img src="aiasistant.jpg" alt="FinTech AI" class="w-full h-48 object-cover transition-transform">
+                            <div class="overlay-gradient"></div>
+                        </div>
+                        <div class="p-6">
+                            <span class="tag mb-3 inline-block">Finance</span>
+                            <h3 class="text-xl font-bold mb-2">FinTech AI Assistant</h3>
+                            <p class="text-muted text-sm">NLP-powered customer support bot reducing response time by 80% with deep contextual understanding.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card glass-card p-0 overflow-hidden group" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="img-wrapper">
+                            <img src="healthcare.jpg" alt="Healthcare AI" class="w-full h-48 object-cover transition-transform">
+                            <div class="overlay-gradient"></div>
+                        </div>
+                        <div class="p-6">
+                            <span class="tag tag-secondary mb-3 inline-block">Healthcare</span>
+                            <h3 class="text-xl font-bold mb-2">Healthcare Analytics</h3>
+                            <p class="text-muted text-sm">Real-time patient monitoring with predictive alerts, deployed across a massive local hospital network.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-card glass-card p-0 overflow-hidden group" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="img-wrapper">
+                            <img src="ecommers.jpg" alt="E-commerce AI" class="w-full h-48 object-cover transition-transform">
+                            <div class="overlay-gradient"></div>
+                        </div>
+                        <div class="p-6">
+                            <span class="tag tag-accent mb-3 inline-block">Retail</span>
+                            <h3 class="text-xl font-bold mb-2">E-commerce ML Engine</h3>
+                            <p class="text-muted text-sm">ML-driven product recommendation system directly increasing conversion rates by over 45%.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="section container">
+                <div class="cta-banner min-glass relative overflow-hidden" data-aos="fade-up">
+                    <div class="cta-glow"></div>
+                    <div class="text-center relative z-10 p-12">
+                        <h2 class="display-3 mb-4">Ready to accelerate your business?</h2>
+                        <p class="text-xl text-muted max-w-2xl mx-auto mb-8">Join the growing list of companies using Lurnexa's AI infrastructure to scale their operations.</p>
+                        <button class="btn-primary btn-large glow-effect border-none" onclick="document.getElementById('connectBtn').click()">Start a Conversation</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =================== SOLUTIONS PAGE =================== -->
+        <div id="solutions" class="page">
+            <section class="page-header text-center container">
+                <h1 class="display-1" data-aos="fade-down">Comprehensive <span class="text-gradient">Solutions</span></h1>
+                <p class="page-subtitle mt-6" data-aos="fade-up" data-aos-delay="100">End-to-end engineered AI and software ecosystems tailored precisely to your business topology.</p>
+            </section>
+
+            <section class="section container">
+                <div class="grid grid-2 gap-10 solutions-grid">
+                    
+                    <div id="solution-web" class="glass-card hover-lift p-10" data-aos="fade-right">
+                        <div class="flex items-center gap-6 mb-6">
+                            <div class="icon-box-lg bg-gradient-primary"><i class="fas fa-globe text-white"></i></div>
+                            <h2 class="text-3xl font-bold">Web Development</h2>
+                        </div>
+                        <p class="text-muted text-lg mb-8">Strategic guidance to help you identify where AI can deliver real ROI. We assess opportunities and build highly interactive, scalable web platforms.</p>
+                        
+                        <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Core Offerings</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="pill">Full-Stack Apps</span>
+                            <span class="pill">Complex Dashboards</span>
+                            <span class="pill">E-Commerce Platforms</span>
+                            <span class="pill">Interactive UI/UX</span>
+                        </div>
+                    </div>
+
+                    <div id="solution-ai" class="glass-card hover-lift p-10" data-aos="fade-left">
+                        <div class="flex items-center gap-6 mb-6">
+                            <div class="icon-box-lg bg-gradient-secondary"><i class="fas fa-brain text-white"></i></div>
+                            <h2 class="text-3xl font-bold">AI & Machine Learning</h2>
+                        </div>
+                        <p class="text-muted text-lg mb-8">Robust data infrastructure that scales. From complex NLP systems to predictive modeling, we build the foundation for automated decisions.</p>
+                        
+                        <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Technologies</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="pill pill-secondary">NLP Systems</span>
+                            <span class="pill pill-secondary">Prediction Models</span>
+                            <span class="pill pill-secondary">Task Automation</span>
+                            <span class="pill pill-secondary">Generative AI</span>
+                        </div>
+                    </div>
+
+                    <div id="solution-backend" class="glass-card hover-lift p-10" data-aos="fade-up">
+                        <div class="flex items-center gap-6 mb-6">
+                            <div class="icon-box-lg bg-gradient-primary"><i class="fas fa-server text-white"></i></div>
+                            <h2 class="text-3xl font-bold">Backend & API</h2>
+                        </div>
+                        <p class="text-muted text-lg mb-8">Modern applications inherently built for the cloud. Scalable, resilient, and highly secure solutions using microservices and fast APIs.</p>
+                        <div class="flex flex-wrap gap-3 mt-auto">
+                            <span class="pill">Scalable Systems</span>
+                            <span class="pill">REST & GraphQL</span>
+                            <span class="pill">FastAPI / Node</span>
+                        </div>
+                    </div>
+
+                    <div id="solution-cloud" class="glass-card hover-lift p-10" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-center gap-6 mb-6">
+                            <div class="icon-box-lg bg-gradient-secondary"><i class="fas fa-cloud text-white"></i></div>
+                            <h2 class="text-3xl font-bold">Cloud & DevOps</h2>
+                        </div>
+                        <p class="text-muted text-lg mb-8">We orchestrate your infrastructure deployment ensuring zero downtime, continuous integration, and massive horizontal scaling.</p>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="pill pill-secondary">AWS / Azure</span>
+                            <span class="pill pill-secondary">Docker & K8s</span>
+                            <span class="pill pill-secondary">CI / CD Pipelines</span>
+                        </div>
+                    </div>
+
+                    <div id="solution-data" class="glass-card hover-lift p-10 grid-col-span-2 text-center" data-aos="zoom-in">
+                        <div class="flex flex-col items-center justify-center">
+                            <div class="icon-box-lg bg-gradient-primary mb-6 mx-auto"><i class="fas fa-chart-line text-white"></i></div>
+                            <h2 class="text-3xl font-bold mb-4">Deep Data Analytics</h2>
+                            <p class="text-muted text-lg max-w-3xl mx-auto mb-8">Transforming billions of data points into a singular cohesive dashboard capable of redefining your entire corporate strategy through business intelligence.</p>
+                            <div class="flex flex-wrap justify-center gap-3">
+                                <span class="pill">Power BI</span>
+                                <span class="pill">Advanced Data Viz</span>
+                                <span class="pill">Actionable Insights</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =================== RESEARCH PAGE =================== -->
+        <div id="research" class="page">
+            <section class="page-header text-center container">
+                <div class="inline-block glass-badge mb-4"><i class="fas fa-flask text-secondary mr-2"></i> Lurnexa Labs</div>
+                <h1 class="display-1" data-aos="zoom-in">AI <span class="text-gradient">Research</span></h1>
+                <p class="page-subtitle mt-6" data-aos="fade-up">Pushing the boundaries of artificial intelligence through open research and relentless experimentation.</p>
+            </section>
+
+            <section class="section container">
+                <h3 class="text-2xl font-bold mb-8 border-l-4 border-primary pl-4" data-aos="fade-right">Active Projects</h3>
+                <div class="grid grid-3 gap-8">
+                    
+                    <div class="glass-card project-card relative overflow-hidden p-8" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute top-0 right-0 p-6 opacity-10"><i class="fas fa-language text-8xl"></i></div>
+                        <h3 class="text-2xl font-bold mb-2 relative z-10">Project Sherpa</h3>
+                        <p class="text-primary font-bold text-sm uppercase tracking-widest mb-4 relative z-10">Active · 80% Complete</p>
+                        <p class="text-muted mb-8 relative z-10">Fine-tuning large language models for specialized customer support yielding a 40% cost reduction and drastically faster inference.</p>
+                        
+                        <div class="flex gap-4 text-sm text-gray-400 mb-6 relative z-10">
+                            <span><i class="fas fa-users mr-1"></i> 4 Researchers</span>
+                            <span><i class="fas fa-calendar mr-1"></i> Est. Q2 2026</span>
+                        </div>
+                        
+                        <div class="w-full bg-dark-lighter rounded-full h-2.5 relative z-10">
+                            <div class="bg-gradient-primary h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card project-card relative overflow-hidden p-8" data-aos="fade-up" data-aos-delay="200">
+                        <div class="absolute top-0 right-0 p-6 opacity-10"><i class="fas fa-microchip text-8xl"></i></div>
+                        <h3 class="text-2xl font-bold mb-2 relative z-10">TinyEdge</h3>
+                        <p class="text-secondary font-bold text-sm uppercase tracking-widest mb-4 relative z-10">Active · 65% Complete</p>
+                        <p class="text-muted mb-8 relative z-10">20KB blazing fast anomaly detection model designed specifically for IoT sensors achieving stunning 97% accuracy on low-power edge devices.</p>
+                        
+                        <div class="flex gap-4 text-sm text-gray-400 mb-6 relative z-10">
+                            <span><i class="fas fa-users mr-1"></i> 3 Researchers</span>
+                            <span><i class="fas fa-calendar mr-1"></i> Est. Q3 2026</span>
+                        </div>
+                        
+                        <div class="w-full bg-dark-lighter rounded-full h-2.5 relative z-10">
+                            <div class="bg-gradient-secondary h-2.5 rounded-full" style="width: 65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card project-card relative overflow-hidden p-8" data-aos="fade-up" data-aos-delay="300">
+                        <div class="absolute top-0 right-0 p-6 opacity-10"><i class="fas fa-eye text-8xl"></i></div>
+                        <h3 class="text-2xl font-bold mb-2 relative z-10">VisionCore</h3>
+                        <p class="text-primary font-bold text-sm uppercase tracking-widest mb-4 relative z-10">Active · 45% Complete</p>
+                        <p class="text-muted mb-8 relative z-10">Real-time object detection engine optimized for extreme manufacturing quality control applications with verified 99.5% precision bounds.</p>
+                        
+                        <div class="flex gap-4 text-sm text-gray-400 mb-6 relative z-10">
+                            <span><i class="fas fa-users mr-1"></i> 5 Researchers</span>
+                            <span><i class="fas fa-calendar mr-1"></i> Est. Q4 2026</span>
+                        </div>
+                        
+                        <div class="w-full bg-dark-lighter rounded-full h-2.5 relative z-10">
+                            <div class="bg-gradient-primary h-2.5 rounded-full" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section container pt-0">
+                <div class="glass-panel p-10 mt-10" data-aos="fade-up">
+                    <h2 class="text-3xl font-bold mb-8">Recent <span class="text-gradient">Publications</span></h2>
+                    
+                    <div class="space-y-6">
+                        <div class="pub-row flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-dark-lighter rounded-2xl hover:bg-surface border border-transparent hover:border-gray-700 transition">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Efficient Fine-Tuning of LLMs for Domain-Specific Tasks</h4>
+                                <p class="text-muted">Presented at global AI Summit 2025, San Francisco</p>
+                            </div>
+                            <div class="text-primary font-bold mt-4 md:mt-0 whitespace-nowrap">March 2025</div>
+                        </div>
+                        
+                        <div class="pub-row flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-dark-lighter rounded-2xl hover:bg-surface border border-transparent hover:border-gray-700 transition">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Edge-Based Anomaly Detection: A 20KB Embedded Solution</h4>
+                                <p class="text-muted">Published in Journal of Machine Learning Research</p>
+                            </div>
+                            <div class="text-primary font-bold mt-4 md:mt-0 whitespace-nowrap">January 2025</div>
+                        </div>
+                        
+                        <div class="pub-row flex flex-col md:flex-row justify-between items-start md:items-center p-6 bg-dark-lighter rounded-2xl hover:bg-surface border border-transparent hover:border-gray-700 transition">
+                            <div>
+                                <h4 class="text-xl font-bold text-white mb-2">Computer Vision in Heavy Manufacturing: A Core Case Study</h4>
+                                <p class="text-muted">Industry 4.0 Conference, Berlin</p>
+                            </div>
+                            <div class="text-primary font-bold mt-4 md:mt-0 whitespace-nowrap">November 2024</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =================== CAREERS PAGE =================== -->
+        <div id="careers" class="page">
+            <section class="page-header text-center container pb-10">
+                <h1 class="display-1" data-aos="zoom-in">Join the <span class="text-gradient">Rocketship</span></h1>
+                <p class="page-subtitle mt-6" data-aos="fade-up">Help us build the absolute future of AI. We are remote-first, inclusive, and fiercely mission-driven.</p>
+            </section>
+
+            <section class="section container pt-0">
+                <div class="grid grid-4 gap-6 text-center" data-aos="fade-up">
+                    <div class="glass-card p-8">
+                        <i class="fas fa-home text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Remote-First</h4>
+                        <p class="text-sm text-muted">Work from anywhere. We implicitly trust you to deliver excellence.</p>
+                    </div>
+                    <div class="glass-card p-8">
+                        <i class="fas fa-chart-line text-4xl text-secondary mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Equity For All</h4>
+                        <p class="text-sm text-muted">Every employee gets substantial stock options. We win together.</p>
+                    </div>
+                    <div class="glass-card p-8">
+                        <i class="fas fa-book text-4xl text-primary mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Learning Budget</h4>
+                        <p class="text-sm text-muted">$2k/year strictly allocated for courses, conferences, and books.</p>
+                    </div>
+                    <div class="glass-card p-8">
+                        <i class="fas fa-heart text-4xl text-secondary mb-4"></i>
+                        <h4 class="font-bold text-lg mb-2">Health & Wellness</h4>
+                        <p class="text-sm text-muted">Comprehensive premium health coverage + vast fitness stipend.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section container">
+                <h2 class="text-4xl font-bold mb-10 text-center" data-aos="fade-up">Open <span class="text-gradient">Positions</span></h2>
+                
+                <div class="space-y-8 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <!-- Position 1 -->
+                    <div class="glass-card p-8 hover:border-primary transition group">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Senior Machine Learning Engineer</h3>
+                                <span class="text-primary font-bold text-sm tracking-widest uppercase">Full-Time · Remote</span>
+                            </div>
+                            <button class="btn-primary mt-4 md:mt-0" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCxiAklBvuv3XIlTAOqL0YqSymIlWD4QPob5oouA8YK_cpoQ/viewform', '_blank')">Apply Now <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></button>
+                        </div>
+                        <p class="text-muted mb-6">Design, architect, and deploy raw production ML models. 5+ years intense experience with Python, deep PyTorch, and robust cloud platforms expected.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill pill-sm">PyTorch</span><span class="pill pill-sm">Python</span><span class="pill pill-sm">AWS</span><span class="pill pill-sm">Kubernetes</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Position 2 -->
+                    <div class="glass-card p-8 hover:border-secondary transition group">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">Lead Full-Stack Developer</h3>
+                                <span class="text-secondary font-bold text-sm tracking-widest uppercase">Full-Time · Remote</span>
+                            </div>
+                            <button class="btn-outline mt-4 md:mt-0" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCxiAklBvuv3XIlTAOqL0YqSymIlWD4QPob5oouA8YK_cpoQ/viewform', '_blank')">Apply Now <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></button>
+                        </div>
+                        <p class="text-muted mb-6">Build extremely beautiful, scalable, performant web applications supporting massive loads. 4+ years deep experience with React, Node.js paradigms, and Serverless.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill pill-sm pill-secondary">React</span><span class="pill pill-sm pill-secondary">Node.js</span><span class="pill pill-sm pill-secondary">TypeScript</span><span class="pill pill-sm pill-secondary">GraphQL</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Position 3 -->
+                    <div class="glass-card p-8 hover:border-primary transition group">
+                        <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white mb-1">AI Research Scientist</h3>
+                                <span class="text-primary font-bold text-sm tracking-widest uppercase">Full-Time · Remote</span>
+                            </div>
+                            <button class="btn-outline mt-4 md:mt-0" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSdCxiAklBvuv3XIlTAOqL0YqSymIlWD4QPob5oouA8YK_cpoQ/viewform', '_blank')">Apply Now <i class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></button>
+                        </div>
+                        <p class="text-muted mb-6">Push the pure boundaries of AI mechanics through original, foundational research. PhD strictly preferred, accompanied by a spectacularly strong publication record.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="pill pill-sm">Transformers</span><span class="pill pill-sm">Computer Vision</span><span class="pill pill-sm">Research</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- =================== INSIGHTS PAGE =================== -->
+        <div id="insights" class="page">
+            <section class="page-header text-center container">
+                <h1 class="display-1" data-aos="zoom-in"><span class="text-gradient">Insights</span> & Ideas</h1>
+                <p class="page-subtitle mt-6" data-aos="fade-up">Profound thoughts on artificial intelligence, scaling startups, and building tech that actually matters.</p>
+            </section>
+
+            <section class="section container pt-0">
+                <div class="glass-card p-0 overflow-hidden flex flex-col md:flex-row mb-16" data-aos="fade-up">
+                    <div class="w-full md:w-1/2 p-12 flex flex-col justify-center">
+                        <span class="tag tag-primary mb-4 self-start">Featured Editor's Pick</span>
+                        <h2 class="text-4xl font-bold mb-4 leading-tight">Why Most AI Proofs-of-Concept Fail (And Exactly How We Fix It)</h2>
+                        <p class="text-primary mb-6"><i class="fas fa-user-circle mr-2"></i> Sarah Chen · March 15, 2026 · 8 min read</p>
+                        <p class="text-muted text-lg mb-8">The massive gap between a promising AI benchmark demo and a resilient production-ready system is inherently wider than most realize. We mapped out the exact failure vectors...</p>
+                        <a href="#" class="font-bold text-white hover:text-primary transition underline-effect self-start">Read Full Article <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="w-full md:w-1/2 bg-gradient-primary flex items-center justify-center p-20 min-h-[400px]">
+                        <i class="fas fa-chart-network text-9xl text-white opacity-90 drop-shadow-2xl"></i>
+                    </div>
+                </div>
+                
+                <div class="grid grid-3 gap-8">
+                    <!-- Blog 1 -->
+                    <div class="glass-card hover-lift p-8 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+                        <p class="text-sm text-secondary font-bold mb-3 uppercase tracking-wider">March 10, 2026</p>
+                        <h3 class="text-2xl font-bold mb-4">The Startup Guide to Massive Data Flywheels</h3>
+                        <p class="text-muted flex-grow">A deep dive into building self-reinforcing data ingestion systems that exponentially improve your AI capacity over time without scaling costs proportionately.</p>
+                        <div class="flex justify-between items-center mt-6 pt-6 border-t border-gray-800 text-sm">
+                            <span class="text-white font-medium">Mike Ross</span>
+                            <span class="text-gray-400"><i class="far fa-clock mr-1"></i>5 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 2 -->
+                    <div class="glass-card hover-lift p-8 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-sm text-primary font-bold mb-3 uppercase tracking-wider">February 28, 2026</p>
+                        <h3 class="text-2xl font-bold mb-4">We Open-Sourced Our Proprietary TinyML Library</h3>
+                        <p class="text-muted flex-grow">Introducing EdgeML 2.0: an incredibly sparse 20KB library built primarily for seamlessly running dense ML models on extremely constrained microcontrollers.</p>
+                        <div class="flex justify-between items-center mt-6 pt-6 border-t border-gray-800 text-sm">
+                            <span class="text-white font-medium">Alex Rivera</span>
+                            <span class="text-gray-400"><i class="far fa-clock mr-1"></i>4 min read</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Blog 3 -->
+                    <div class="glass-card hover-lift p-8 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+                        <p class="text-sm text-secondary font-bold mb-3 uppercase tracking-wider">February 15, 2026</p>
+                        <h3 class="text-2xl font-bold mb-4">Building Ethical AI Architectures: A Practical Framework</h3>
+                        <p class="text-muted flex-grow">Beyond mere philosophy: exactly how we structurally ensure our production AI systems remain fair, transparent, and strictly accountable through mathematics.</p>
+                        <div class="flex justify-between items-center mt-6 pt-6 border-t border-gray-800 text-sm">
+                            <span class="text-white font-medium">Dr. James Wong</span>
+                            <span class="text-gray-400"><i class="far fa-clock mr-1"></i>6 min read</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="mt-20 p-1 rounded-3xl bg-gradient-to-r from-primary to-secondary" data-aos="zoom-in">
+                    <div class="bg-dark rounded-[22px] p-12 text-center relative overflow-hidden">
+                        <div class="cta-glow opacity-30"></div>
+                        <h3 class="text-3xl font-bold mb-4 relative z-10">Subscribe to our engineering newsletter</h3>
+                        <p class="text-muted text-lg mb-8 max-w-2xl mx-auto relative z-10">Receive purely technical weekly insights on AI architecture, machine learning breakthroughs, and hardcore startup building concepts.</p>
+                        
+                        <form class="flex flex-col md:flex-row justify-center max-w-xl mx-auto gap-4 relative z-10" onsubmit="event.preventDefault(); showToast('📧 Subscribed to the Lurnexa Matrix!');">
+                            <input type="email" placeholder="enter.your@email.com" required class="glass-input flex-grow text-white">
+                            <button type="submit" class="btn-primary whitespace-nowrap">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- =================== DYNAMIC CONTENT PAGE =================== -->
+        <div id="dynamic-content-page" class="page">
+            <section class="page-header text-center container pb-10">
+                <h1 class="display-2" id="dynamic-title" data-aos="zoom-in"><span class="text-gradient">Content</span></h1>
+                <p class="page-subtitle mt-4" id="dynamic-subtitle" data-aos="fade-up">Explore detailed information about this specific topic.</p>
+            </section>
+            <section class="section container pt-0">
+                <div class="glass-card p-10 max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    <div id="dynamic-body" class="text-muted text-lg space-y-6 leading-relaxed">
+                        <!-- Content injected via JS -->
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-20 pt-16 border-t border-gray-800 bg-black/40 backdrop-blur-md">
+        <div class="container pb-12">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap flex items-center gap-6 mb-8">
+                        <div class="logo" id="footerLogo">
+                            <img src="logo.png" alt="Lurnexa Logo" class="footer-logo-img">
+                        </div>
+                        <div class="footer-address-box">
+                            <address class="text-light not-italic font-bold text-lg mb-1">
+                                Headquarters
+                            </address>
+                            <p class="text-muted leading-relaxed">
+                                Gorantla, Guntur<br>
+                                AP, India 522034
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-contact-info space-y-4 mb-8">
+                        <a href="mailto:lurnexasolution@gmail.com" class="flex items-center gap-3 text-muted hover:text-primary transition group">
+                            <div class="w-10 h-10 rounded-xl bg-surface flex items-center justify-center group-hover:bg-primary-dim transition">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <span>lurnexasolution@gmail.com</span>
+                        </a>
+                        <a href="tel:+919133521829" class="flex items-center gap-3 text-muted hover:text-secondary transition group">
+                            <div class="w-10 h-10 rounded-xl bg-surface flex items-center justify-center group-hover:bg-secondary-dim transition">
+                                <i class="fas fa-phone-alt text-secondary"></i>
+                            </div>
+                            <span>+91 91335 21829</span>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/lurnexa-technologies-a132623b5" target="_blank" class="w-12 h-12 rounded-2xl bg-surface flex items-center justify-center text-white hover:bg-primary transition-all hover:-translate-y-1 shadow-lg hover:shadow-primary/20">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/lurnexa_technologies" target="_blank" class="w-12 h-12 rounded-2xl bg-surface flex items-center justify-center text-white hover:bg-secondary transition-all hover:-translate-y-1 shadow-lg hover:shadow-secondary/20">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Solutions Ecosystem</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-content="ai-analytics" class="footer-link">AI & Analytics</a></li>
+                        <li><a href="#" data-content="automation" class="footer-link">Intelligent Automation</a></li>
+                        <li><a href="#" data-content="data-engineering" class="footer-link">Data Engineering</a></li>
+                        <li><a href="#" data-content="cloud-dev" class="footer-link">Cloud Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Company Operations</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-content="about" class="footer-link">About Us</a></li>
+                        <li><a href="#" data-link="careers" class="footer-link">Careers</a></li>
+                        <li><a href="#" data-content="press" class="footer-link">Press & Media</a></li>
+                        <li><a href="#" data-content="partners" class="footer-link">Global Partners</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav-col">
+                    <h4 class="footer-heading">Legal & Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" data-content="privacy" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" data-content="terms" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" data-link="insights" class="footer-link">Engineering Blog</a></li>
+                        <li><a href="#" data-content="api" class="footer-link">API Documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Lurnexa Technologies. A Division of LURNEXA PUBLICATIONS. Precision engineered & all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Glowing Contact Modal -->
+    <div id="contactModal" class="modal-overlay">
+        <div class="glass-modal max-w-lg w-full relative">
+            <button id="closeModal" class="absolute top-4 right-6 text-gray-400 hover:text-white text-3xl transition">&times;</button>
+            <div class="text-center mb-8">
+                <div class="inline-block p-4 rounded-full bg-gradient-primary mb-4 shadow-glow">
+                    <i class="fas fa-paper-plane text-2xl text-white"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-white mb-2">Initialize Contact</h2>
+                <p class="text-muted">Aqueous transmission link established. <br>We deploy responses within 24 standard hours.</p>
+            </div>
+            
+            <form id="contactForm" class="space-y-4">
+                <input type="text" id="nameInput" placeholder="Full designation" required class="glass-input w-full">
+                <input type="email" id="emailInput" placeholder="Transmission address (Email)" required class="glass-input w-full">
+                <input type="text" id="companyInput" placeholder="Corporate affiliation (Optional)" class="glass-input w-full">
+                <textarea id="messageInput" rows="4" placeholder="Detail your specific project parameters or inquiries..." required class="glass-input w-full resize-none"></textarea>
+                <button type="submit" id="sendMessageBtn" class="btn-primary w-full py-4 text-lg font-bold glow-effect flex justify-center items-center">
+                    Transmit Message <i class="fas fa-satellite-dish ml-2"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enhanced Toast Custom Notification -->
+    <div id="toast" class="glass-toast">
+        <div class="flex items-center gap-3">
+            <div class="toast-icon bg-primary rounded-full w-8 h-8 flex items-center justify-center text-white text-sm">
+                <i class="fas fa-bell"></i>
+            </div>
+            <span id="toast-msg" class="font-medium text-white">System notification</span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="slideScript.js"></script>    
+    <script src="script.js"></script>
+</body>
+</html>
