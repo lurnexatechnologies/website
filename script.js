@@ -522,7 +522,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.className = 'logo-intro-overlay';
         overlay.innerHTML = `
             <div class="logo-intro-content" id="logoIntroContent">
-                <img src="logo.png" alt="Lurnexa Logo" class="logo-intro-image">
+                <img src="logo.svg" alt="Lurnexa Logo" class="logo-intro-image">
                 <div class="logo-intro-text">Lurnexa<span class="text-gradient">Tech</span></div>
             </div>
         `;
