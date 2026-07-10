@@ -451,7 +451,7 @@ button, input, textarea {
     gap: 12px;
 }
 
-.logo-image { height: 50px; width: auto; object-fit: contain; }
+.logo-image { height: 50px; width: 50px; object-fit: contain; }
 .logo-text { font-size: 1.5rem; font-family: 'Outfit'; font-weight: 800; letter-spacing: -0.02em; color: #000000; }
 
 .nav-links {
@@ -845,7 +845,7 @@ button, input, textarea {
 
 .footer-logo-img {
     height: 70px;
-    width: auto;
+    width: 70px;
     object-fit: contain;
     filter: drop-shadow(0 0 10px rgba(255, 106, 61, 0.2));
 }
@@ -996,7 +996,7 @@ button, input, textarea {
 
 .logo-intro-image {
     height: 60px;
-    width: auto;
+    width: 60px;
     object-fit: contain;
 }
 
