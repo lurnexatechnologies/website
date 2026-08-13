@@ -1,100 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- Main Homepage -->
   <url>
     <loc>https://lurnexatechnologies.in/</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Core Page Navigation -->
   <url>
     <loc>https://lurnexatechnologies.in/#solutions</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://lurnexatechnologies.in/#research</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lurnexatechnologies.in/#careers</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://lurnexatechnologies.in/#insights</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- Deep Links / Solutions -->
+  <!-- Solution Offerings -->
   <url>
-    <loc>https://lurnexatechnologies.in/#ai-analytics</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://lurnexatechnologies.in/#solution-web</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lurnexatechnologies.in/#automation</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://lurnexatechnologies.in/#solution-ai</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lurnexatechnologies.in/#data-engineering</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://lurnexatechnologies.in/#solution-backend</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lurnexatechnologies.in/#cloud-dev</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://lurnexatechnologies.in/#solution-cloud</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lurnexatechnologies.in/#solution-data</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Company Info -->
+  <!-- Company Information -->
   <url>
     <loc>https://lurnexatechnologies.in/#about</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>yearly</changefreq>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://lurnexatechnologies.in/#press</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://lurnexatechnologies.in/#partners</loc>
-    <lastmod>2026-06-30</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
 
-  <!-- Legal & Resources -->
+  <!-- Legal & Policy Pages -->
   <url>
     <loc>https://lurnexatechnologies.in/#privacy</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://lurnexatechnologies.in/#terms</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://lurnexatechnologies.in/#api</loc>
-    <lastmod>2026-06-30</lastmod>
+    <loc>https://lurnexatechnologies.in/#refund</loc>
+    <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.5</priority>
   </url>
 </urlset>

@@ -9,8 +9,8 @@
   <g transform="skewX(-14) translate(15, 0)">
     <!-- Letter L in dark slate -->
     <path d="M 52 65 L 76 65 L 76 115 L 102 115 L 102 135 L 52 135 Z" fill="#1f2736" />
-    <!-- Letter T in orange (overlapping L slightly) -->
-    <path d="M 94 85 L 172 85 L 172 105 L 143 105 L 143 145 L 123 145 L 123 105 L 94 105 Z" fill="#ff6a3d" />
+    <!-- Letter T in vibrant orange with white outline separation -->
+    <path d="M 94 85 L 172 85 L 172 105 L 143 105 L 143 145 L 123 145 L 123 105 L 94 105 Z" fill="#ff6a3d" stroke="#ffffff" stroke-width="3.5" stroke-linejoin="round" />
   </g>
   
   <!-- Floating pixel squares drifting up-right -->

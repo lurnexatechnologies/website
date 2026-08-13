@@ -1,3 +1,6 @@
+// =========================================================================
+// Hero Slider with Video Background + Touch Support
+// =========================================================================
 
 (function() {
     let currentIndex = 0;
@@ -10,11 +13,8 @@
     
     function updateDots(index) {
         dots.forEach((dot, i) => {
-            if (i === index) {
-                dot.classList.add('active-dot');
-            } else {
-                dot.classList.remove('active-dot');
-            }
+            dot.classList.toggle('active-dot', i === index);
+            dot.setAttribute('aria-selected', i === index ? 'true' : 'false');
         });
     }
     
@@ -24,15 +24,15 @@
             video.currentTime = 0;
             const playPromise = video.play();
             if (playPromise !== undefined) {
-                playPromise.catch(e => {
-                    console.log('Autoplay blocked:', e);
+                playPromise.catch(() => {
+                    // Autoplay blocked — try on first user interaction
                     const tryPlay = () => {
                         video.play().catch(() => {});
                         document.removeEventListener('click', tryPlay);
                         document.removeEventListener('touchstart', tryPlay);
                     };
-                    document.addEventListener('click', tryPlay);
-                    document.addEventListener('touchstart', tryPlay);
+                    document.addEventListener('click', tryPlay, { once: true });
+                    document.addEventListener('touchstart', tryPlay, { once: true });
                 });
             }
         }
@@ -46,69 +46,91 @@
     }
     
     function changeSlide(index) {
-        // Pause current video
         pauseVideo(currentIndex);
         
-        // Remove active classes
         slides[currentIndex].classList.remove('active-slide');
         videos[currentIndex].classList.remove('active-video');
         
-        // Update current index
         currentIndex = index;
         
-        // Add active classes to new slide
         slides[currentIndex].classList.add('active-slide');
         videos[currentIndex].classList.add('active-video');
         
-        // Update dots
         updateDots(currentIndex);
-        
-        // Play new video
         playVideo(currentIndex);
     }
     
     function nextSlide() {
-        let nextIndex = (currentIndex + 1) % slides.length;
-        changeSlide(nextIndex);
+        changeSlide((currentIndex + 1) % slides.length);
     }
     
-    // Add click event to dots
+    // Dot click events
     dots.forEach((dot, index) => {
         dot.addEventListener('click', function() {
             if (index !== currentIndex) {
                 changeSlide(index);
-                
-                // Reset the interval timer
-                clearInterval(slideInterval);
-                slideInterval = setInterval(nextSlide, 8000);
+                resetInterval();
             }
         });
     });
     
-    // Try to play first video immediately with multiple attempts
+    // ----- TOUCH / SWIPE SUPPORT -----
+    const heroSection = document.querySelector('.hero-section');
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const SWIPE_THRESHOLD = 50;
+    
+    if (heroSection) {
+        heroSection.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        heroSection.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > SWIPE_THRESHOLD) {
+                if (diff > 0) {
+                    // Swipe left → next slide
+                    changeSlide((currentIndex + 1) % slides.length);
+                } else {
+                    // Swipe right → previous slide
+                    changeSlide((currentIndex - 1 + slides.length) % slides.length);
+                }
+                resetInterval();
+            }
+        }, { passive: true });
+    }
+    
+    // ----- AUTO-ADVANCE INTERVAL -----
+    let slideInterval = setInterval(nextSlide, 8000);
+    
+    function resetInterval() {
+        clearInterval(slideInterval);
+        slideInterval = setInterval(nextSlide, 8000);
+    }
+    
+    // Play first video once DOM is ready
     function startFirstVideo() {
         playVideo(0);
     }
     
-    // Attempt on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        setTimeout(startFirstVideo, 100);
-        setTimeout(startFirstVideo, 500);
-        setTimeout(startFirstVideo, 1000);
-    });
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(startFirstVideo, 200);
+        });
+    } else {
+        setTimeout(startFirstVideo, 200);
+    }
     
-    // Also try when window loads
-    window.addEventListener('load', function() {
-        setTimeout(startFirstVideo, 100);
-    });
-    
-    // Start the interval
-    let slideInterval = setInterval(nextSlide, 8000);
-    
-    // Handle page visibility
+    // Handle page visibility — pause/resume interval
     document.addEventListener('visibilitychange', function() {
-        if (!document.hidden) {
+        if (document.hidden) {
+            clearInterval(slideInterval);
+            pauseVideo(currentIndex);
+        } else {
             playVideo(currentIndex);
+            slideInterval = setInterval(nextSlide, 8000);
         }
     });
 })();
